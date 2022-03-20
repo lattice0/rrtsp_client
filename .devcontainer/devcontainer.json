@@ -1,0 +1,15 @@
+{
+	"name": "Rust environment",
+	"dockerFile": "../docker/Dockerfile",
+	"extensions": [
+		"rust-lang.rust"
+	],
+	"containerEnv": {
+		"DISPLAY": "unix:0"
+	},
+	"mounts": [
+		"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
+	  ],
+	"runArgs": ["--privileged"],
+	
+}

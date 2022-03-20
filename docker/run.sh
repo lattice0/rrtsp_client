@@ -1,0 +1,1 @@
+sudo docker run -v $PWD/..:/home/project -it rtsp_client /bin/bash

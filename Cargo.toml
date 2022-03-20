@@ -1,0 +1,27 @@
+[package]
+name = "rrtsp_client"
+version = "0.1.0"
+authors = ["Lattice0"]
+edition = "2018"
+
+[dev-dependencies]
+clap = "2.33.3"
+url = "2.2.2"
+
+[dependencies]
+tokio = { version = "1.4.0", features = ["rt-multi-thread", "macros", "net", "io-util", "rt", "time"] }
+rtsp-types = { path = "./rtsp-types" }
+sdp-types = { path = "./sdp-types" }
+futures = { version="0.3.13", default-features = false, features = ["std"] }
+log = { version="0.4.14", default-features = false }
+env_logger = "0.8.3"
+rand = { version="0.8.3", default-features = false, features=["std","std_rng"] }
+www-authenticate = { path = "./www-authenticate", default-features = false, features=["hash_digest"] }
+md-5 = { version = "0.9.1" }
+sha-1 = { version = "0.9.4" }
+sha2 = { version = "0.9.3" }
+base64 = "0.13.0"
+hex = { version = "0.4" }
+digest = "0.9.0"
+percent-encoding = "2.1.0"
+unicase = "2.0"
